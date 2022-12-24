@@ -13,7 +13,7 @@ MarchUnitCommand.DisabledToolTipString = Locale.Lookup("LOC_UNITCOMMAND_MARCH_DI
 MarchUnitCommand.VisibleInUI = true;
 
 function MarchUnitCommand.CanUse(pUnit : object)
-	return (pUnit:GetMovesRemaining() == pUnit:GetMaxMoves());
+	return	pUnit ~= nil;
 end
 
 function MarchUnitCommand.IsVisible(pUnit : object)
