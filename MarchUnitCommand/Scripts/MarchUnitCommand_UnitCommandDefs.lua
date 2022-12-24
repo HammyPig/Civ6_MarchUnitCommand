@@ -12,16 +12,16 @@ MarchUnitCommand.ToolTipString = Locale.Lookup("LOC_UNITCOMMAND_MARCH_NAME") .. 
 MarchUnitCommand.DisabledToolTipString = Locale.Lookup("LOC_UNITCOMMAND_MARCH_DISABLED_TT");
 MarchUnitCommand.VisibleInUI = true;
 
-function MarchUnitCommand.CanUse(pUnit: object)
+function MarchUnitCommand.CanUse(pUnit : object)
 	if (pUnit:GetMovesRemaining() ~= pUnit:GetMaxMoves()) then
 		return false;
 	end
 end
 
-function MarchUnitCommand.IsVisible(pUnit: object)
+function MarchUnitCommand.IsVisible(pUnit : object)
 	return pUnit ~= nil and pUnit:GetMovesRemaining() > 0;
 end
 
-function MarchUnitCommand.IsDisabled(pUnit: object)
+function MarchUnitCommand.IsDisabled(pUnit : object)
 	return (pUnit ~= nil and pUnit:GetMovesRemaining() == pUnit:GetMaxMoves());
 end
