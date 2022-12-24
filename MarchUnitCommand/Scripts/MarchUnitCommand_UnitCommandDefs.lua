@@ -5,7 +5,7 @@
 
 MarchUnitCommand = {};
 MarchUnitCommand.properties = {};
-MarchUnitCommand.EventName = "";
+MarchUnitCommand.EventName = "UnitCommand_March";
 MarchUnitCommand.CategoryInUI = "SPECIFIC";
 MarchUnitCommand.Icon = "ICON_UNITOPERATION_MOVE_TO";
 MarchUnitCommand.ToolTipString = Locale.Lookup("LOC_UNITCOMMAND_MARCH_NAME") .. "[NEWLINE][NEWLINE]" .. Locale.Lookup("LOC_UNITCOMMAND_MARCH_DESCRIPTION");

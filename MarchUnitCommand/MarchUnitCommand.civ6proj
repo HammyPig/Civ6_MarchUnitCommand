@@ -18,7 +18,7 @@
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
     <AssemblyName>MarchUnitCommand</AssemblyName>
     <RootNamespace>MarchUnitCommand</RootNamespace>
-    <InGameActionData><![CDATA[<InGameActions><ImportFiles id="MarchUnitCommandFiles"><File>Scripts/MarchUnitCommand_UnitCommandDefs.lua</File><File>Scripts/MarchUnitCommand_UnitCommands.lua</File><File>UI/Replacements/MarchUnitCommand_UnitPanel.lua</File></ImportFiles><ReplaceUIScript id="MarchUnitCommandUnitPanel"><Properties><LuaContext>UnitPanel</LuaContext><LuaReplace>UI/Replacements/MarchUnitCommand_UnitPanel.lua</LuaReplace></Properties></ReplaceUIScript><UpdateText id="MarchUnitCommandText"><File>Text/en_US/MarchUnitCommand_GameplayText.xml</File></UpdateText></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><ImportFiles id="MarchUnitCommandFiles"><File>Scripts/MarchUnitCommand_UnitCommandDefs.lua</File><File>Scripts/MarchUnitCommand_UnitCommands.lua</File><File>UI/Replacements/MarchUnitCommand_UnitPanel.lua</File><File>Scripts/MarchUnitCommand_StateUtils.lua</File></ImportFiles><ReplaceUIScript id="MarchUnitCommandUnitPanel"><Properties><LuaContext>UnitPanel</LuaContext><LuaReplace>UI/Replacements/MarchUnitCommand_UnitPanel.lua</LuaReplace></Properties></ReplaceUIScript><UpdateText id="MarchUnitCommandText"><File>Text/en_US/MarchUnitCommand_GameplayText.xml</File></UpdateText><AddGameplayScripts id="MarchUnitCommandScripts"><File>Scripts/MarchUnitCommand.lua</File></AddGameplayScripts></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -34,6 +34,12 @@
     <Folder Include="UI\Replacements" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\MarchUnitCommand.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\MarchUnitCommand_StateUtils.lua">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Scripts\MarchUnitCommand_UnitCommandDefs.lua">
       <SubType>Content</SubType>
     </Content>
