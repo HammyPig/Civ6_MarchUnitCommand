@@ -6,12 +6,16 @@
     <Guid>6851b4d2-45d8-48ca-baa1-e237bbe7a051</Guid>
     <ProjectGuid>6d7cc7c8-7661-4014-935b-b3455bcdeaa1</ProjectGuid>
     <ModVersion>1</ModVersion>
-    <Teaser>March unit command.</Teaser>
-    <Description>March unit command.</Description>
+    <Teaser>March is a unit command that gives units extra movement at the cost of health.</Teaser>
+    <Description>March is a unit command that gives units extra movement at the cost of health.
+
+This interesting mechanic is useful for covering long distances quickly. This enables more opportunity for cross map play, but comes at a high initial cost to discourage quick-use during combat.
+
+To use the ability, select a unit and click the March button (near Fortify) in the unit panel. Each click (repeatable) will give the unit an extra turn of movement and deduct half of its current health in the process. Units with 1 health cannot use March.</Description>
     <Authors>Hammy_Pig</Authors>
     <SpecialThanks>
     </SpecialThanks>
-    <AffectsSavedGames>true</AffectsSavedGames>
+    <AffectsSavedGames>false</AffectsSavedGames>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
     <SupportsMultiplayer>true</SupportsMultiplayer>
     <SupportsHotSeat>true</SupportsHotSeat>
