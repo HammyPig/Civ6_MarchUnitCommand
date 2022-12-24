@@ -3,8 +3,6 @@
 -- DateCreated: 12/24/2022 3:09:33 PM
 --------------------------------------------------------------
 
-include "MarchUnitCommand_StateUtils"
-
 function UnitCommand_March(eOwner : number, iUnitID : number)
 	local pPlayer = Players[eOwner];
 	if (pPlayer == nil) then
@@ -16,14 +14,15 @@ function UnitCommand_March(eOwner : number, iUnitID : number)
 		return;
 	end
 
-	local marching : number = GetObjectState(pUnit, g_PropertyKeys.marching);
-	if (marching == 1) then
-		return;
-	end
+	-- gain extra movement
+	pUnit:ChangeMovesRemaining(pUnit:GetMaxMoves());
 
-	UnitManager.ChangeMovesRemaining(pUnit, 2);
+	-- at the cost of half your health
+	local health = 100 - pUnit:GetDamage()
+	health = math.ceil(health / 2);
+	pUnit:SetDamage(100 - health);
 
-	SetObjectState(pUnit, g_PropertyKeys.marching, 1);
+	return;
 end
 
 GameEvents.UnitCommand_March.Add(UnitCommand_March)

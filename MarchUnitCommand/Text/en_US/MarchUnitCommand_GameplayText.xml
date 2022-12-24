@@ -8,10 +8,10 @@
 			<Text>March</Text>
 		</Row>
 		<Row Tag="LOC_UNITCOMMAND_MARCH_DESCRIPTION">
-			<Text>Double your unit's movement speed. Dramatically reduce combat strength.</Text>
+			<Text>Give your unit extra movement speed at the cost of half its health.</Text>
 		</Row>
 		<Row Tag="LOC_UNITCOMMAND_MARCH_DISABLED_TT">
-			<Text>[COLOR:Civ6Red]Can only be used before taking an action.</Text>
+			<Text>[COLOR:Civ6Red]Can only be used if your unit has more than 1 health.</Text>
 		</Row>
 	</EnglishText>
 </GameData>
