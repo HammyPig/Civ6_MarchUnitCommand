@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MarchUnitCommand_GameplayText -->
+<!-- Author: James -->
+<!-- DateCreated: 12/24/2022 2:46:08 PM -->
+<GameData>
+	<EnglishText>
+		<Row Tag="LOC_UNITCOMMAND_MARCH_NAME">
+			<Text>March</Text>
+		</Row>
+		<Row Tag="LOC_UNITCOMMAND_MARCH_DESCRIPTION">
+			<Text>Double your unit's movement speed. Dramatically reduce combat strength.</Text>
+		</Row>
+		<Row Tag="LOC_UNITCOMMAND_MARCH_DISABLED_TT">
+			<Text>[COLOR:Civ6Red]Can only be used before taking an action.</Text>
+		</Row>
+	</EnglishText>
+</GameData>
