@@ -8,7 +8,7 @@
 			<Text>March</Text>
 		</Row>
 		<Row Tag="LOC_UNITCOMMAND_MARCH_DESCRIPTION">
-			<Text>Give your unit extra movement speed at the cost of half its health.</Text>
+			<Text>Give your unit extra movement at the cost of half its health.</Text>
 		</Row>
 		<Row Tag="LOC_UNITCOMMAND_MARCH_DISABLED_TT">
 			<Text>[COLOR:Civ6Red]Can only be used if your unit has more than 1 health.</Text>
