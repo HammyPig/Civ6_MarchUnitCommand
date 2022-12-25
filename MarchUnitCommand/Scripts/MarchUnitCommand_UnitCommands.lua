@@ -14,13 +14,11 @@ function UnitCommand_March(eOwner : number, iUnitID : number)
 		return;
 	end
 
-	-- gain extra movement
-	pUnit:ChangeMovesRemaining(pUnit:GetMaxMoves());
+	-- gain 2x movement (+1 to make up for the fact you have to heal)
+	pUnit:ChangeMovesRemaining(3 * pUnit:GetMaxMoves());
 
-	-- at the cost of half your health
-	local health = 100 - pUnit:GetDamage()
-	health = math.ceil(health / 2);
-	pUnit:SetDamage(100 - health);
+	-- at the cost of 10 hp
+	pUnit:SetDamage(pUnit:GetDamage() + 10);
 
 	return;
 end

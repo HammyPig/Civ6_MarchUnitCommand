@@ -21,5 +21,5 @@ function MarchUnitCommand.IsVisible(pUnit : object)
 end
 
 function MarchUnitCommand.IsDisabled(pUnit : object)
-	return pUnit == nil or pUnit:GetDamage() >= 99;
+	return pUnit == nil or pUnit:GetDamage() > 0;
 end
