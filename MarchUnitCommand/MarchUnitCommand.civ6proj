@@ -9,9 +9,11 @@
     <Teaser>March is a unit command that gives units extra movement at the cost of health.</Teaser>
     <Description>March is a unit command that gives units extra movement at the cost of health.
 
-This interesting mechanic is useful for covering long distances quickly. This enables more opportunity for cross map play, but comes at a high initial cost to discourage quick-use during combat.
+This interesting mechanic is useful for covering long distances quickly, enabling more opportunity for cross-map play. To discourage use in combat, damaged units cannot use March.
 
-To use the ability, select a unit and click the March button (near Fortify) in the unit panel. Each click (repeatable) will give the unit an extra turn of movement and deduct half of its current health in the process. Units with 1 health cannot use March.</Description>
+To use the ability, select an undamaged unit and click the March button (near Fortify) in the unit panel. This will give the unit 3 extra turns of movement and deduct 10 health in the process.
+
+Using March and healing intermittently effectively doubles a unit's movement. For example, in 2 turns you can move your Warrior 4 turns worth of tiles by activating March and then using the next turn to stop and heal back to full health.</Description>
     <Authors>Hammy_Pig</Authors>
     <SpecialThanks>
     </SpecialThanks>
